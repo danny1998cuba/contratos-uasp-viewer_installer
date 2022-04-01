@@ -397,4 +397,4 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 
-InstallAction/container/
+InstallAction/container/contracts.war

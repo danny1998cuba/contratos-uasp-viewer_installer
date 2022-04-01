@@ -1,0 +1,33 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+  <title>SigeCont</title>
+  <base href="./">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+<style>:root{--primary-color:#f5f5f5;--secondary-color:#ddd;--third-color:#f05454;--font-color:#121212;--selection-color:#f05454aa;--header-height:3rem}*{padding:0;margin:0;box-sizing:border-box;font-family:Poppins;transition:all .2s}body{background:var(--primary-color);min-width:480px}@media screen and (max-width : 991px){:root{--header-height:2.5rem}}</style><link rel="stylesheet" href="styles.a1049c1a56db0d6f0fd4.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.a1049c1a56db0d6f0fd4.css"></noscript></head>
+
+<body onload="onLoad()">
+  <app-root></app-root>
+
+  <script src="assets/js/utils.js"></script>
+  <script>
+    function onLoad() {
+      var darkBtn = document.getElementById('dark-btn');
+
+      if (localStorage.getItem("theme") == "light") {
+        darkBtn.classList.remove('dark-btn-on');
+        document.body.classList.remove('dark-theme');
+      } else if (localStorage.getItem("theme") == "dark") {
+        darkBtn.classList.add('dark-btn-on');
+        document.body.classList.add('dark-theme');
+      } else {
+        localStorage.setItem("theme", "light");
+      }
+    }
+    
+    resizeFormContainer();
+    window.addEventListener('resize', resizeFormContainer);
+  </script>
+<script src="runtime.b585d1d7bc2de1e17c76.js" defer></script><script src="polyfills.7e4c7647e8014840ffbb.js" defer></script><script src="scripts.77482492733cb3c3aae7.js" defer></script><script src="main.6454f8de9df5bb580242.js" defer></script>
+
+</body></html>
